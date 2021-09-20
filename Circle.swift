@@ -1,17 +1,15 @@
 //Circle class
-class Circle: Shape {
-    let radius: Double
+class Circle: Ellipse {
     override var description: String {
-        return super.description + "radius: \(radius)"
+        return super.description + " Radius: \(major)"
     }
     
     init(_ radius: Double) {
-        self.radius = radius
-        super.init()
+        super.init(minor: radius, major: radius)
         type = .Circle
     }
     
-    override func area() -> Double {return Double.pi * radius * radius}
-    override func perimeter() -> Double {return 2 * Double.pi * radius}
-    func circumference() -> Double {return perimeter()}
+    override func area() -> Double {return Double.pi * major * major}
+    override func perimeter() -> Double {return 2 * Double.pi * major}
+    override func circumference() -> Double {return perimeter()}
 }

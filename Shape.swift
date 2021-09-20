@@ -1,6 +1,6 @@
 //ShapeType enum
 enum ShapeType {
-    case Shape, Circle, RightTriangle, IsoscelesRightTriangle, Rectangle, Square
+    case Shape, Circle, RightTriangle, IsoscelesRightTriangle, Rectangle, Square, Ellipse
 }
 
 //Shape class (abstract class...no instances will be made)

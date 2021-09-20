@@ -20,8 +20,13 @@ shapes.append(t2)
 shapes.append(IsoscelesRightTriangle(leg: 6))
 shapes.append(Square(width: 2))
 shapes.append(Rectangle(width: 2, length:2))
+shapes.append(Ellipse(minor: 2, major: 3))
 for s in shapes {
   print(s)
   print("\n")
+  if s.type == .Rectangle {
+    let rect = s as! Rectangle
+    print("Rectangle Area:", rect.area())
+  }
 }
 
